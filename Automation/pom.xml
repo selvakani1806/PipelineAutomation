@@ -58,7 +58,6 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>${testsuiteFile}</suiteXmlFile>
 					</suiteXmlFiles>
-					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 		</plugins>
