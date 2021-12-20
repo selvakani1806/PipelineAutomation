@@ -8,7 +8,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testsuiteFile>testng.xml</testsuiteFile>
-	
+
 	</properties>
 
 	<dependencies>
@@ -31,6 +31,7 @@
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-surefire-plugin</artifactId>
 			<version>2.22.2</version>
+
 		</dependency>
 
 
@@ -51,11 +52,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
+
+
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>${testsuiteFile}</suiteXmlFile>
 					</suiteXmlFiles>
-					<testFailureIgnore>true</testFailureIgnore>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 		</plugins>
